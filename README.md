@@ -16,5 +16,26 @@ Manual resume screening during high-volume recruitment drives creates severe pro
 
 1. Clone this repository:
 ```bash
-git clone [https://github.com/s-niezabitowska/cv-summariser.git](https://github.com/s-niezabitowska/cv-summariser.git)
+git clone https://github.com/s-niezabitowska/cv-summariser.git
 cd cv-summariser
+```
+
+2. Establish dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+3. Setup your environment variable:
+
+Create a .env file in the root directory and append your secure client key:
+
+```bash
+echo "OPENAI_API_KEY=your_key_here" > .env
+```
+
+4. Execute script:
+
+```bash
+python main.py
+```
